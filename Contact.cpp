@@ -14,7 +14,7 @@ vector<string> arrChosen;
 int k;
 string d;
 
-bool isTrue(string value)
+bool isTrue(string value) 
 {
 	return (value == value);
 }
@@ -86,7 +86,7 @@ void Contact::showArr()
 
 }
 
-void Contact::delVip(int word)
+void Contact::delVip(int word) //удаление избр. контакта
 {
 	if (arrChosen.size() != 0) {
 		int k = word * 6;
@@ -171,7 +171,7 @@ void Contact::choseCont(int word)
 
 }
 
-void Contact::deleteMass(int word)
+void Contact::deleteMass(int word) //очистка массива при удалении элемента из списка
 {
 	int k = word * 6;
 
@@ -236,12 +236,12 @@ void Contact::phoneMask()
 }
 
 void Contact::SetData()
-
+//ввод данных для нового контакта
 {
 
 	cout << "Введите имя: "; cin >> name;
 
-	arr.push_back(name);
+	arr.push_back(name); //дублирование этих данных в массив для поиска элемента из него 
 
 	cout << "Введите фамилию: "; cin >> secName;
 
