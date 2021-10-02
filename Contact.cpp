@@ -27,7 +27,7 @@ bool isTrue1(string value)
 
 Contact::Contact(string _name, string _secName, string _company, string _dateBorn, string _phone, string _mail)
 
-{
+{Ввцв
 	name = _name;
 
 	secName = _secName;
