@@ -39,13 +39,14 @@ Contact::Contact(string _name, string _secName, string _company, string _dateBor
 	phone = _phone;
 
 	mail = _mail;
+	
 }
 
 Contact::~Contact()
 
 {
 
-	cout << endl << "Âûçâàí äåñòðóêòîð" << endl;
+	cout << endl << "Ã‚Ã»Ã§Ã¢Ã Ã­ Ã¤Ã¥Ã±Ã²Ã°Ã³ÃªÃ²Ã®Ã°" << endl;
 
 }
 
@@ -53,7 +54,7 @@ void Contact::Show(int _id)
 
 {
 
-	cout << endl << "ID: " << _id << endl << "Èìÿ: " << name << endl << "Ôàìèëèÿ: " << secName << endl << "Êîìïàíèÿ: " << company << endl  << "Äàòà ðîæäåíèÿ: " << dateBorn << endl << "Íîìåð òåëåôîíà: " << phone << endl<< "e-mail: " << mail << endl;
+	cout << endl << "ID: " << _id << endl << "ÃˆÃ¬Ã¿: " << name << endl << "Ã”Ã Ã¬Ã¨Ã«Ã¨Ã¿: " << secName << endl << "ÃŠÃ®Ã¬Ã¯Ã Ã­Ã¨Ã¿: " << company << endl  << "Ã„Ã Ã²Ã  Ã°Ã®Ã¦Ã¤Ã¥Ã­Ã¨Ã¿: " << dateBorn << endl << "ÃÃ®Ã¬Ã¥Ã° Ã²Ã¥Ã«Ã¥Ã´Ã®Ã­Ã : " << phone << endl<< "e-mail: " << mail << endl;
 
 }
 
@@ -72,7 +73,7 @@ void Contact::showArr()
 		for (int i = 0; i < arrChosen.size(); i++)
 		{
 
-			cout << endl << "ID èçáðàííîãî: " << a << endl << "Èìÿ: " << arrChosen[i] << endl << "Ôàìèëèÿ: " << arrChosen[i + 1] << endl << "Êîìïàíèÿ: " << arrChosen[i + 2] << endl << "Äàòà ðîæäåíèÿ: " << arrChosen[i + 3] << endl << "Íîìåð òåëåôîíà: " << arrChosen[i + 4] << endl << "e-mail: " << arrChosen[i + 5] << endl;
+			cout << endl << "ID Ã¨Ã§Ã¡Ã°Ã Ã­Ã­Ã®Ã£Ã®: " << a << endl << "ÃˆÃ¬Ã¿: " << arrChosen[i] << endl << "Ã”Ã Ã¬Ã¨Ã«Ã¨Ã¿: " << arrChosen[i + 1] << endl << "ÃŠÃ®Ã¬Ã¯Ã Ã­Ã¨Ã¿: " << arrChosen[i + 2] << endl << "Ã„Ã Ã²Ã  Ã°Ã®Ã¦Ã¤Ã¥Ã­Ã¨Ã¿: " << arrChosen[i + 3] << endl << "ÃÃ®Ã¬Ã¥Ã° Ã²Ã¥Ã«Ã¥Ã´Ã®Ã­Ã : " << arrChosen[i + 4] << endl << "e-mail: " << arrChosen[i + 5] << endl;
 
 			i = i + 5;
 			a++;
@@ -81,7 +82,7 @@ void Contact::showArr()
 	}
 	else
 	{
-		cout << "Ñïèñîê èçáðàííûõ ïóñò";
+		cout << "Ã‘Ã¯Ã¨Ã±Ã®Ãª Ã¨Ã§Ã¡Ã°Ã Ã­Ã­Ã»Ãµ Ã¯Ã³Ã±Ã²";
 	}
 
 }
@@ -99,10 +100,10 @@ void Contact::delVip(int word)
 
 		arrChosen.erase(newEnd, z + 6);
 
-		cout << "Êîíòàêò óäàëåí" << endl;
+		cout << "ÃŠÃ®Ã­Ã²Ã ÃªÃ² Ã³Ã¤Ã Ã«Ã¥Ã­" << endl;
 	}
 	else {
-		cout << "Â èçáðàííîì íåò òàêîãî ID" << endl;
+		cout << "Ã‚ Ã¨Ã§Ã¡Ã°Ã Ã­Ã­Ã®Ã¬ Ã­Ã¥Ã² Ã²Ã ÃªÃ®Ã£Ã® ID" << endl;
 	}
 	///////////////////////////////////////////////////
 
@@ -119,8 +120,8 @@ void Contact::delVip(int word)
 
 
 void Contact::findObj(string word) 
-// ÿ íå ðàçîáðàëñÿ, êàê ìîæíî áûñòðî èñêàòü ýëëåìåíò â ñïèñêå, ïîýòîìó ñäåëàë âîò òàêîé êîñòûëü
-// ïðè÷åì ïîèñê ïî ñïèñêó èäåò ÷åðåç òàêóþ æå êîíñòðóêöèþ find + áóëåâà ôóíêöèÿ äëÿ ñðàâíåíèÿ ýë-îâ, íî ÿ ÷òî-òî çàòóïèë òóò...
+// Ã¿ Ã­Ã¥ Ã°Ã Ã§Ã®Ã¡Ã°Ã Ã«Ã±Ã¿, ÃªÃ Ãª Ã¬Ã®Ã¦Ã­Ã® Ã¡Ã»Ã±Ã²Ã°Ã® Ã¨Ã±ÃªÃ Ã²Ã¼ Ã½Ã«Ã«Ã¥Ã¬Ã¥Ã­Ã² Ã¢ Ã±Ã¯Ã¨Ã±ÃªÃ¥, Ã¯Ã®Ã½Ã²Ã®Ã¬Ã³ Ã±Ã¤Ã¥Ã«Ã Ã« Ã¢Ã®Ã² Ã²Ã ÃªÃ®Ã© ÃªÃ®Ã±Ã²Ã»Ã«Ã¼
+// Ã¯Ã°Ã¨Ã·Ã¥Ã¬ Ã¯Ã®Ã¨Ã±Ãª Ã¯Ã® Ã±Ã¯Ã¨Ã±ÃªÃ³ Ã¨Ã¤Ã¥Ã² Ã·Ã¥Ã°Ã¥Ã§ Ã²Ã ÃªÃ³Ã¾ Ã¦Ã¥ ÃªÃ®Ã­Ã±Ã²Ã°Ã³ÃªÃ¶Ã¨Ã¾ find + Ã¡Ã³Ã«Ã¥Ã¢Ã  Ã´Ã³Ã­ÃªÃ¶Ã¨Ã¿ Ã¤Ã«Ã¿ Ã±Ã°Ã Ã¢Ã­Ã¥Ã­Ã¨Ã¿ Ã½Ã«-Ã®Ã¢, Ã­Ã® Ã¿ Ã·Ã²Ã®-Ã²Ã® Ã§Ã Ã²Ã³Ã¯Ã¨Ã« Ã²Ã³Ã²...
 {
 	bool a = true;
 
@@ -128,7 +129,7 @@ void Contact::findObj(string word)
 
 		if (arr[i].find(word) == 0) {
 		
-			cout << endl << "Èìÿ: " << arr[i] << endl << "Ôàìèëèÿ: " << arr[i + 1] << endl << "Êîìïàíèÿ: " << arr[i + 2] << endl << "Äàòà ðîæäåíèÿ: " << arr[i + 3] << endl << "Íîìåð òåëåôîíà: " << arr[i + 4] << endl << "e-mail: " << arr[i + 5] << endl;
+			cout << endl << "ÃˆÃ¬Ã¿: " << arr[i] << endl << "Ã”Ã Ã¬Ã¨Ã«Ã¨Ã¿: " << arr[i + 1] << endl << "ÃŠÃ®Ã¬Ã¯Ã Ã­Ã¨Ã¿: " << arr[i + 2] << endl << "Ã„Ã Ã²Ã  Ã°Ã®Ã¦Ã¤Ã¥Ã­Ã¨Ã¿: " << arr[i + 3] << endl << "ÃÃ®Ã¬Ã¥Ã° Ã²Ã¥Ã«Ã¥Ã´Ã®Ã­Ã : " << arr[i + 4] << endl << "e-mail: " << arr[i + 5] << endl;
 		
 			i = i + 5;
 
@@ -139,7 +140,7 @@ void Contact::findObj(string word)
 
 	if (a) {
 
-		cout << "Êîíòàêò íå íàéäåí" << endl;
+		cout << "ÃŠÃ®Ã­Ã²Ã ÃªÃ² Ã­Ã¥ Ã­Ã Ã©Ã¤Ã¥Ã­" << endl;
 	}
 }
 
@@ -239,27 +240,27 @@ void Contact::SetData()
 
 {
 
-	cout << "Ââåäèòå èìÿ: "; cin >> name;
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¨Ã¬Ã¿: "; cin >> name;
 
 	arr.push_back(name);
 
-	cout << "Ââåäèòå ôàìèëèþ: "; cin >> secName;
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã´Ã Ã¬Ã¨Ã«Ã¨Ã¾: "; cin >> secName;
 
 	arr.push_back(secName);
 
-	cout << "Ââåäèòå êîìïàíèþ: "; cin >> company;
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã¬Ã¯Ã Ã­Ã¨Ã¾: "; cin >> company;
 
 	arr.push_back(company);
 
-	cout << "Ââåäèòå äàòó ðîæäåíèÿ: "; cin >> dateBorn;
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¤Ã Ã²Ã³ Ã°Ã®Ã¦Ã¤Ã¥Ã­Ã¨Ã¿: "; cin >> dateBorn;
 
 	arr.push_back(dateBorn);
 
-	cout << "Ââåäèòå íîìåð òåëåôîíà: "; //cin >> phone;
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã®Ã¬Ã¥Ã° Ã²Ã¥Ã«Ã¥Ã´Ã®Ã­Ã : "; //cin >> phone;
 
 	phoneMask();
 	
-	cout << endl << "Ââåäèòå e-mail: "; cin >> mail;
+	cout << endl << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ e-mail: "; cin >> mail;
 
 	arr.push_back(mail);
 
