@@ -6,7 +6,7 @@ class Contact
 
 {
 
-private: // объявление полей кантакта
+private: // РѕР±СЉСЏРІР»РµРЅРёРµ РїРѕР»РµР№ РєРѕРЅС‚Р°РєС‚Р°
 	string name;
 
 	string secName;
@@ -19,7 +19,7 @@ private: // объявление полей кантакта
 
 	string mail;
 
-public: // фуекции для реализации логики программы
+public: // С„СѓРЅРєС†РёРё РґР»СЏ СЂРµР°Р»РёР·Р°С†РёРё Р»РѕРіРёРєРё РїСЂРѕРіСЂР°РјРјС‹
 
 	Contact();
 	
@@ -27,20 +27,20 @@ public: // фуекции для реализации логики программы
 
 	virtual ~Contact();
 
-	void Show(int _i);
+	void Show(int _i); //РїРѕРєР°Р· СЃРїРёСЃРєР° РІСЃРµС… РєРѕРЅС‚Р°РєС‚РѕРІ
  
-	void SetData();
+	void SetData(); //РІРІРѕРґ РґР°РЅРЅС‹С… РїСЂРё РґРѕР±Р°РІР»РµРЅРёРё РєРѕРЅС‚Р°РєС‚Р°
 
-	static void showArr();
+	static void showArr(); 
 
-	static void findObj(string word);
+	static void findObj(string word); 
 
-	static void deleteMass(int _i);
+	static void deleteMass(int _i); 
 
-	void phoneMask();
+	void phoneMask(); 
 
-	static void choseCont(int word);
+	static void choseCont(int word); //РґРѕР±Р°РІР»РµРЅРёРµ РІ РёР·Р±СЂР°РЅРЅРѕРµ 
 
-	static void delVip(int word);
+	static void delVip(int word); //СѓРґР°Р»РµРЅРёРµ РёР· РёР·Р±СЂР°РЅРЅРѕРіРѕ
 
 };
