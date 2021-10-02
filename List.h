@@ -20,7 +20,7 @@ private:
 public:
 
 	~List();
-	void AddInst(Contact*);
+	void AddInst(Contact*); //функции для управления списком
 	void RemoveInst(int);
 	void ShowList();
 };
